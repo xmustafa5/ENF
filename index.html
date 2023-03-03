@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  -->
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- animetion -->
+    <!-- section one -->
+    <header class="header">
+        <button id="btn" class="btn">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </button>
+        <nav class="navigation" id="noo">
+            <div class="nav">
+
+                <ul id="mune">
+                    <li><a href="#home" id="a1">home</a></li>
+                    <li> <a href="#Emergence" id="a2"> Department Emergence</a></li>
+                    <li> <a href="#qq" id="a3">the library</a></li>
+                    <li> <a href="#projects" id="a4">the cafeteria</a></li>
+                    <li> <a href="#projects" id="a5">the Laboratory</a< /li>
+                </ul>
+                <div class="animation  start-home"></div>
+
+            </div>
+            <div class="image" data-aos="fade-right" data-aos-duration="1900">
+                <img src="image/cslogo.png" alt="logo" width="70px">
+            </div>
+
+        </nav>
+        <div class="main" id="home">
+            <div>
+                <h2 data-aos="fade-right" data-aos-duration="1300" data-aos-once="true"> <br> <span>audio guide</span>
+                </h2>
+                <h3 data-aos="fade-left" data-aos-duration="1300">for the department of computer science</h3>
+                <img src="qrcode.png" alt="">
+                <audio controls class="audio2">
+                    <source src="audio/1.mp3" type="audio/mp3 ">
+                </audio>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <div class="Emergence" id="Emergence">
+        <div class="rr">
+            <div class="emg">
+                <div class="emg2">
+                    <div class="emg1">
+                        <!-- <img src="image/ew.png" alt="er"> -->
+                    </div>
+                </div>
+                <div class="eminfo">
+                    <h2>
+                        Emergence
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam voluptates consectetur quo
+                        ullam.
+                        Explicabo, perspiciatis harum. Repellat, aut itaque.
+                        ullam.
+                        Explicabo, perspiciatis harum. Repellat, aut itaque.ullam.
+                        Explicabo, perspiciatis harum. Repellat, aut itaque.
+                        Explicabo, perspiciatis harum. Repellat, aut itaque.
+
+                    </p>
+                    <div class="emimage">
+                            <img src="qrcode.png" alt="aa">
+                        
+                            <div class="fexaudio onwi">
+                                <audio controls class="audio1 ">
+                                    <source src="audio/1.mp3" type="audio/mp3">
+
+                                </audio>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="audio abslot ">
+        <div class="onwi">
+            <img src="qrcode.png" alt="" width="80px">
+            <audio controls class="audio1 ">
+                <source src="audio/1.mp3" type="audio/mp3">
+
+            </audio>
+            <audio controls class="audio4 ">
+                <source src="audio/1.mp3" type="audio/mp3 ">
+            </audio>
+            <audio controls class="audio5 ">
+                <source src="audio/1.mp3" type="audio/mp3 ">
+            </audio>
+            <audio controls class="audio6 ">
+                <source src="audio/1.mp3" type="audio/mp3 ">
+            </audio>
+        </div> -->
+    <!-- in black -->
+    <!-- <audio controls class="audio2">
+            <source src="audio/1.mp3" type="audio/mp3 ">
+        </audio>
+        <audio controls class="audio3 ">
+            <source src="audio/1.mp3" type="audio/mp3 ">
+        </audio>
+    </div> 
+       animt card -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <!--  slide animt -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- initializing swiper slider -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4, //عدد الكروت
+            spaceBetween: 30, //مسافه بين الكروت
+            grabCursor: true,
+            autoplay: {
+                delay: 1200,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper1 = new Swiper(".mySwiper1", {
+            slidesPerView: 5, //عدد الكروت
+            spaceBetween: 2, //مسافه بين الكروت
+            grabCursor: true,
+            autoplay: {
+                delay: 1200,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
